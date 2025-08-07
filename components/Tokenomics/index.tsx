@@ -34,14 +34,14 @@ const Tokenomics = () => {
                 <td className="py-3 font-medium text-gray-700">Total Supply:</td>
                 <td className="py-3 text-xl font-semibold text-gray-900">1,500,000,000</td>
               </tr>
-              <tr>
+              <tr className="border-b-2 border-gray-200">
                 <td className="py-3 font-medium text-gray-700">Contract:</td>
                 <td className="py-3 text-xl font-semibold text-gray-900 break-all">
                   <a
                     href="https://bscscan.com/token/0xB85447b4854e848904471728e6106356bCb4861B"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800"
+                    className="text-red-600 hover:text-red-800 font-bold"
                   >
                     0xB85447b4854e848904471728e6106356bCb4861B
                   </a>
