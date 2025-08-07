@@ -4,7 +4,7 @@ const Tokenomics = () => {
   return (
     <section
       className={
-        "container v-stack lg:h-stack items-center justify-between pt-32 lg:space-x-32 space-y-14 lg:space-y-0"
+        "container v-stack lg:h-stack items-center justify-center min-h-screen lg:space-x-32 space-y-14 lg:space-y-0"
       }
     >
       <section className={"v-stack space-y-10"}>
