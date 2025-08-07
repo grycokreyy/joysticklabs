@@ -53,7 +53,7 @@ const Header = () => {
                     <ul className={"v-stack space-y-3 font-semibold text-sm"}>
                       <li>
                         <NavigationMenuLink
-                          href={"#"}
+                          href={"/whitepaper.pdf"}
                           target={"_blank"}
                           className={"hover:cursor-pointer"}
                         >

@@ -56,7 +56,7 @@ const HeaderMobile = () => {
                     <ul className={"v-stack space-y-2 text-sm"}>
                       <li>
                         <Link
-                          href={"#"}
+                          href={"/whitepaper.pdf"}
                           target={"_blank"}
                         >
                           White Paper
