@@ -5,6 +5,7 @@ import OurMission from "@/components/our-mission";
 import OurProducts from "@/components/our-products";
 import OurRoadmap from "@/components/our-roadmap";
 import PoweredBy from "@/components/powered-by";
+import Tokenomics from "@/components/Tokenomics";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <BlurEllipse className={"top-[50rem] right-40"} />
         <BlurEllipse className={"top-[70rem] right-[40rem]"} />
         <OurProducts />
+        <Tokenomics />
         <OurRoadmap />
         <PoweredBy />
       </section>

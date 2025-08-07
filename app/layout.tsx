@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import React from "react";
 import HeaderMobile from "@/components/header-mobile";
+import Tokenomics from "@/components/Tokenomics";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -30,7 +31,10 @@ export default function RootLayout({
       <body className={`${montserrat.className} bg-[#CECECF]`}>
         <Header />
         <HeaderMobile />
-        <main>{children}</main>
+        <main>
+        {children}
+        <Tokenomics /> 
+        </main>
         <Footer />
       </body>
     </html>
