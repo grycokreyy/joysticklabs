@@ -51,6 +51,7 @@ const Tokenomics = () => {
           </table>
         </div>
 
+        {/* Token allocation */}
         <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"}>
           {[
             { title: "Public Sale", percent: "10%", tokens: "150,000,000", note: "100% unlocked at TGE" },
