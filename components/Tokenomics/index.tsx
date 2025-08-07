@@ -11,7 +11,7 @@ const Tokenomics = () => {
         <h1 className={"h1 text-primary text-center"}>TOKENOMICS</h1>
 
         <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto">
-          The JoystickLabs Token ($JSK) has been meticulously designed to foster
+          The JoyStick Token ($JSK) has been meticulously designed to foster
           a robust and sustainable ecosystem. With a total supply of 1.5 billion
           tokens, the allocation strategy ensures balanced distribution among
           investors, team members, advisors, and community incentives,
@@ -24,7 +24,7 @@ const Tokenomics = () => {
             <tbody>
               <tr className="border-b-2 border-gray-200">
                 <td className="py-3 font-medium text-gray-700">Token Name:</td>
-                <td className="py-3 text-xl font-semibold text-gray-900">JoystickLabs Token</td>
+                <td className="py-3 text-xl font-semibold text-gray-900">JoyStick</td>
               </tr>
               <tr className="border-b-2 border-gray-200 bg-gray-50">
                 <td className="py-3 font-medium text-gray-700">Symbol:</td>
