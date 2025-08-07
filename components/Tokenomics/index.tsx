@@ -18,7 +18,7 @@ const Tokenomics = () => {
           promoting long-term growth and engagement.
         </p>
 
-        <div className="max-w-md mx-auto border-2 border-primary rounded-xl p-8 bg-gradient-to-r from-blue-50 via-blue-100 to-white shadow-xl">
+        <div className="max-w-md mx-auto border-2 border-primary rounded-xl p-8 bg-gradient-to-r from-red-50 via-red-100 to-white shadow-xl">
           <h2 className="font-semibold text-2xl mb-6 text-center text-primary">Token Details</h2>
           <table className="w-full text-left">
             <tbody>
@@ -38,7 +38,7 @@ const Tokenomics = () => {
                 <td className="py-3 font-medium text-gray-700">Contract:</td>
                 <td className="py-3 text-xl font-semibold text-gray-900 break-all">
                   <a
-                    href="https://bscscan.com/address/0xB85447b4854e848904471728e6106356bCb4861B"
+                    href="https://bscscan.com/token/0xB85447b4854e848904471728e6106356bCb4861B"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800"
