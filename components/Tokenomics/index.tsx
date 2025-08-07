@@ -18,21 +18,34 @@ const Tokenomics = () => {
           promoting long-term growth and engagement.
         </p>
 
-        <div className="max-w-md mx-auto border border-primary rounded-lg p-6 bg-white shadow-md">
-          <h2 className="font-semibold text-xl mb-4 text-center text-primary">Token Details</h2>
+        <div className="max-w-md mx-auto border-2 border-primary rounded-xl p-8 bg-gradient-to-r from-blue-50 via-blue-100 to-white shadow-xl">
+          <h2 className="font-semibold text-2xl mb-6 text-center text-primary">Token Details</h2>
           <table className="w-full text-left">
             <tbody>
-              <tr>
-                <td className="py-2 font-medium">Token Name:</td>
-                <td className="py-2">JoystickLabs Token</td>
+              <tr className="border-b-2 border-gray-200">
+                <td className="py-3 font-medium text-gray-700">Token Name:</td>
+                <td className="py-3 text-xl font-semibold text-gray-900">JoystickLabs Token</td>
               </tr>
-              <tr className="bg-gray-50">
-                <td className="py-2 font-medium">Symbol:</td>
-                <td className="py-2">$JSK</td>
+              <tr className="border-b-2 border-gray-200 bg-gray-50">
+                <td className="py-3 font-medium text-gray-700">Symbol:</td>
+                <td className="py-3 text-xl font-semibold text-gray-900">$JSK</td>
+              </tr>
+              <tr className="border-b-2 border-gray-200">
+                <td className="py-3 font-medium text-gray-700">Total Supply:</td>
+                <td className="py-3 text-xl font-semibold text-gray-900">1,500,000,000</td>
               </tr>
               <tr>
-                <td className="py-2 font-medium">Total Supply:</td>
-                <td className="py-2">1,500,000,000</td>
+                <td className="py-3 font-medium text-gray-700">Contract:</td>
+                <td className="py-3 text-xl font-semibold text-gray-900 break-all">
+                  <a
+                    href="https://bscscan.com/address/0xB85447b4854e848904471728e6106356bCb4861B"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800"
+                  >
+                    0xB85447b4854e848904471728e6106356bCb4861B
+                  </a>
+                </td>
               </tr>
             </tbody>
           </table>
