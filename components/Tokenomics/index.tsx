@@ -59,7 +59,15 @@ const Tokenomics = () => {
               <h3 className={"font-semibold text-lg"}>{item.title}</h3>
               <p className={"text-2xl font-bold text-primary"}>{item.percent}</p>
               <p className={"text-sm"}>{item.tokens} tokens</p>
-              <p className={"text-xs text-gray-400"}>{item.note}</p>
+              <p
+                className={
+                  item.note === "100% unlocked at TGE"
+                    ? "text-green-600 text-xs font-semibold"
+                    : "text-red-600 text-xs font-semibold"
+                }
+              >
+                {item.note}
+              </p>
             </div>
           ))}
         </div>
