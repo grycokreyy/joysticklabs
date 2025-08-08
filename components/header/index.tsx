@@ -35,11 +35,12 @@ const Header = () => {
             <Link
               className={"hover:text-primary transition-colors"}
               title={"Joystick Labs"}
-              href={"/"}
+              href={"#home"}
             >
               Home
             </Link>
           </li>
+
           <li>
             <NavigationMenu>
               <NavigationMenuList>
@@ -60,9 +61,30 @@ const Header = () => {
                           White Paper
                         </NavigationMenuLink>
                       </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </li>
+
+          <li>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger
+                    className={"bg-transparent font-semibold text-md"}
+                  >
+                    About Us
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className={"p-3 bg-gray-200"}>
+                    <ul className={"v-stack space-y-3 font-semibold text-sm"}>
                       <li>
-                        <NavigationMenuLink className={"hover:cursor-pointer"}>
-                          Documentation
+                        <NavigationMenuLink
+                          href={"#mission"}
+                          className={"hover:cursor-pointer"}
+                        >
+                          Our Mission
                         </NavigationMenuLink>
                       </li>
                     </ul>
@@ -71,18 +93,28 @@ const Header = () => {
               </NavigationMenuList>
             </NavigationMenu>
           </li>
+
           <li>
             <Link
               className={"hover:text-primary transition-colors"}
-              title={"Ecosystem - Joystick Labs"}
-              href={"/ecosystem"}
+              href={"#products"}
             >
-              Ecosystem
+              Our Products
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className={"hover:text-primary transition-colors"}
+              href={"#roadmap"}
+            >
+              Roadmap
             </Link>
           </li>
         </ul>
       </nav>
-      <Link href={"#!"}>
+
+      <Link href={"#launch"}>
         <Button>Launch App</Button>
       </Link>
     </header>
