@@ -20,7 +20,7 @@ const Header = () => {
         "container py-6 hidden lg:h-stack items-center justify-between"
       }
     >
-      <Link href={"/"}>
+      <Link href={"#home"}>
         <Image
           src={"/logo.png"}
           alt={"joystick labs"}
@@ -81,7 +81,7 @@ const Header = () => {
                     <ul className={"v-stack space-y-3 font-semibold text-sm"}>
                       <li>
                         <NavigationMenuLink
-                          href={"#mission"}
+                          href={"#aboutus"}
                           className={"hover:cursor-pointer"}
                         >
                           Our Mission
@@ -100,6 +100,15 @@ const Header = () => {
               href={"#products"}
             >
               Our Products
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className={"hover:text-primary transition-colors"}
+              href={"#tokenomics"}
+            >
+              Tokenomics
             </Link>
           </li>
 

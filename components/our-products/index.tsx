@@ -31,7 +31,7 @@ const data = [
 
 const OurProducts = () => {
   return (
-    <section className={"container pt-52 v-stack space-y-20"}>
+    <section id="products" className={"container pt-52 v-stack space-y-20"}>
       <h1 className={"text-center text-primary h1 text-4xl"}>OUR PRODUCTS</h1>
 
       <section className={"grid grid-cols-1 lg:grid-cols-3 gap-10"}>
