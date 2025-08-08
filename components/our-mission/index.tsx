@@ -4,6 +4,7 @@ import Image from "next/image";
 const OurMission = () => {
   return (
     <section
+      id="mission"  // Këtu e shtova ID-në
       className={
         "container v-stack lg:h-stack items-center justify-between pt-32 lg:space-x-32 space-y-14 lg:space-y-0"
       }

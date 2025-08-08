@@ -3,6 +3,7 @@ import React from "react";
 const Tokenomics = () => {
   return (
     <section
+      id="tokenomics"
       className={
         "container v-stack lg:h-stack items-center justify-center min-h-screen pt-32 lg:space-x-32 space-y-14 lg:space-y-0"
       }
