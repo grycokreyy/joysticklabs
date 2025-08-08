@@ -21,7 +21,7 @@ const phaseFour = [
 
 const OurRoadmap = () => {
   return (
-    <section className={"relative pt-40 v-stack space-y-20"}>
+    <section id="roadmap" className={"relative pt-40 v-stack space-y-20"}>
       <h2 className={"text-primary h2 text-center"}>OUR ROADMAP</h2>
 
       <section
