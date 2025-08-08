@@ -4,14 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
 
 export const socials = [
   {
@@ -99,60 +91,30 @@ const Footer = () => {
           </section>
 
           <section className="v-stack space-y-5">
-            <Link href={"#home"} className={"font-semibold text-lg"}>
+            <Link href={"/"} className={"font-semibold text-lg"}>
               Home
             </Link>
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className={"bg-transparent font-semibold text-md"}>
-                    Resources
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className={"p-3 bg-gray-200"}>
-                    <ul className={"v-stack space-y-3 font-semibold text-sm"}>
-                      <li>
-                        <NavigationMenuLink href={"/whitepaper.pdf"} target={"_blank"} className={"hover:cursor-pointer"}>
-                          White Paper
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <Link href={"/whitepaper.pdf"} className={"font-semibold text-lg"}>
+              Whitepaper
+            </Link>
           </section>
 
           <section className="v-stack space-y-5">
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className={"bg-transparent font-semibold text-md"}>
-                    About Us
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className={"p-3 bg-gray-200"}>
-                    <ul className={"v-stack space-y-3 font-semibold text-sm"}>
-                      <li>
-                        <NavigationMenuLink href={"#aboutus"} className={"hover:cursor-pointer"}>
-                          Our Mission
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-          </section>
+            <h5 className={"h5"}>NEWSLETTER</h5>
 
-          <section className="v-stack space-y-5">
-            <Link href={"#products"} className={"font-semibold text-lg"}>
-              Our Products
-            </Link>
-            <Link href={"#roadmap"} className={"font-semibold text-lg"}>
-              Roadmap
-            </Link>
-            <Link href={"#tokenomics"} className={"font-semibold text-lg"}>
-              Tokenomics
-            </Link>
+            <div
+              className={
+                "v-stack lg:h-stack items-stretch space-y-4 lg:space-y-0 lg:space-x-1"
+              }
+            >
+              <Input
+                className={"bg-[#A2A2A2] placeholder:text-black"}
+                size={30}
+                type={"email"}
+                placeholder={"Enter email"}
+              />
+              <Button className={"py-4"}>Submit</Button>
+            </div>
           </section>
         </section>
 
