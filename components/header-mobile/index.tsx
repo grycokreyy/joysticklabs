@@ -38,6 +38,7 @@ const HeaderMobile = () => {
                   Home
                 </Link>
               </li>
+
               <li onClick={() => setIsSubMenuOpen((prev) => !prev)}>
                 <div
                   className={
@@ -55,10 +56,7 @@ const HeaderMobile = () => {
                   <div className={"ml-5 mt-2 w-full p-2 rounded-md"}>
                     <ul className={"v-stack space-y-2 text-sm"}>
                       <li>
-                        <Link
-                          href={"/whitepaper.pdf"}
-                          target={"_blank"}
-                        >
+                        <Link href={"/whitepaper.pdf"} target={"_blank"}>
                           White Paper
                         </Link>
                       </li>
@@ -69,14 +67,57 @@ const HeaderMobile = () => {
                   </div>
                 )}
               </li>
+
+              <li onClick={() => setIsSubMenuOpen((prev) => !prev)}>
+                <div
+                  className={
+                    "h-stack items-center space-x-2 hover:text-primary transition-colors"
+                  }
+                >
+                  <span>About Us</span>
+                  <ChevronDown
+                    className={`${isSubMenuOpen ? "rotate-180" : "rotate-0"} transition-all duration-300`}
+                    size={20}
+                  />
+                </div>
+
+                {isSubMenuOpen && (
+                  <div className={"ml-5 mt-2 w-full p-2 rounded-md"}>
+                    <ul className={"v-stack space-y-2 text-sm"}>
+                      <li>
+                        <Link href={"#aboutus"}>Our Mission</Link>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </li>
+
               <li>
                 <Link
                   className={"hover:text-primary transition-colors"}
-                  title={"Ecosystem - Joystick Labs"}
+                  title={"Our Products - Joystick Labs"}
                   onClick={() => setIsOpen(false)}
-                  href={"/ecosystem"}
+                  href={"#products"}
                 >
-                  Ecosystem
+                  Our Products
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className={"hover:text-primary transition-colors"}
+                  href={"#roadmap"}
+                >
+                  Roadmap
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className={"hover:text-primary transition-colors"}
+                  href={"#tokenomics"}
+                >
+                  Tokenomics
                 </Link>
               </li>
 

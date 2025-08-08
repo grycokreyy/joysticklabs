@@ -4,6 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 export const socials = [
   {
@@ -91,33 +99,60 @@ const Footer = () => {
           </section>
 
           <section className="v-stack space-y-5">
-            <Link href={"/"} className={"font-semibold text-lg"}>
+            <Link href={"#home"} className={"font-semibold text-lg"}>
               Home
             </Link>
-            <Link href={"/resources"} className={"font-semibold text-lg"}>
-              Resources
-            </Link>
-            <Link href={"/ecosystem"} className={"font-semibold text-lg"}>
-              Ecosystem
-            </Link>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={"bg-transparent font-semibold text-md"}>
+                    Resources
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className={"p-3 bg-gray-200"}>
+                    <ul className={"v-stack space-y-3 font-semibold text-sm"}>
+                      <li>
+                        <NavigationMenuLink href={"/whitepaper.pdf"} target={"_blank"} className={"hover:cursor-pointer"}>
+                          White Paper
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </section>
 
           <section className="v-stack space-y-5">
-            <h5 className={"h5"}>NEWSLETTER</h5>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={"bg-transparent font-semibold text-md"}>
+                    About Us
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className={"p-3 bg-gray-200"}>
+                    <ul className={"v-stack space-y-3 font-semibold text-sm"}>
+                      <li>
+                        <NavigationMenuLink href={"#aboutus"} className={"hover:cursor-pointer"}>
+                          Our Mission
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </section>
 
-            <div
-              className={
-                "v-stack lg:h-stack items-stretch space-y-4 lg:space-y-0 lg:space-x-1"
-              }
-            >
-              <Input
-                className={"bg-[#A2A2A2] placeholder:text-black"}
-                size={30}
-                type={"email"}
-                placeholder={"Enter email"}
-              />
-              <Button className={"py-4"}>Submit</Button>
-            </div>
+          <section className="v-stack space-y-5">
+            <Link href={"#products"} className={"font-semibold text-lg"}>
+              Our Products
+            </Link>
+            <Link href={"#roadmap"} className={"font-semibold text-lg"}>
+              Roadmap
+            </Link>
+            <Link href={"#tokenomics"} className={"font-semibold text-lg"}>
+              Tokenomics
+            </Link>
           </section>
         </section>
 
@@ -132,14 +167,14 @@ const Footer = () => {
             "v-stack lg:h-stack lg:items-center justify-between lg:text-lg text-gray-700 space-y-5 lg:space-y-0"
           }
         >
-          <span>All rights reserved. Powered by Joystick Labs, 2022.</span>
+          <span>All rights reserved. Powered by Joystick Labs, 2025.</span>
           <div
             className={
               "v-stack lg:h-stack lg:items-center justify-between lg:space-x-10 space-y-5 lg:space-y-0"
             }
           >
-            <Link href={"/terms-agreement"}>Terms & Agreement</Link>
-            <Link href={"/privacy-policy"}>Privacy Policy</Link>
+            <Link href={"/whitepaper.pdf"}>Whitepaper</Link>
+            <Link href={"https://x.com/Joystick_labs"}>Community</Link>
           </div>
         </section>
       </section>
