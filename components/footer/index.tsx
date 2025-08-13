@@ -12,6 +12,12 @@ export const socials = [
     link: "https://x.com/Joystick_labs",
     icon: "/twitter.png",
   },
+  {
+    id: nanoid(),
+    name: "linkedin",
+    link: "https://www.linkedin.com/company/joysticklabs",
+    icon: "/linkedin.png",
+  },
 ];
 
 const Footer = () => {
