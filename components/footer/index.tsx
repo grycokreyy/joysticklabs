@@ -18,6 +18,12 @@ export const socials = [
     link: "https://www.linkedin.com/company/joysticklabs",
     icon: "/linkedin.png",
   },
+  {
+    id: nanoid(),
+    name: "discord",
+    link: "https://discord.com/invite/Axttj38wTe",
+    icon: "/discord.png",
+  },
 ];
 
 const Footer = () => {
