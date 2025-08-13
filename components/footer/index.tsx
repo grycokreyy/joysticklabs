@@ -12,30 +12,6 @@ export const socials = [
     link: "https://x.com/Joystick_labs",
     icon: "/twitter.png",
   },
-  {
-    id: nanoid(),
-    name: "instagram",
-    link: "https://www.instagram.com/joystick_labs/",
-    icon: "/instagram.png",
-  },
-  {
-    id: nanoid(),
-    name: "linkedin",
-    link: "https://www.linkedin.com/company/joysticklabs",
-    icon: "/linkedin.png",
-  },
-  {
-    id: nanoid(),
-    name: "telegram",
-    link: "https://t.me/joysticklabs1",
-    icon: "/telegram.png",
-  },
-  {
-    id: nanoid(),
-    name: "discord",
-    link: "https://discord.com/invite/Axttj38wTe",
-    icon: "/discord.png",
-  },
 ];
 
 const Footer = () => {
