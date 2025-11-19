@@ -13,7 +13,7 @@ const Tokenomics = () => {
 
         <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto">
           The JoyStick Token ($JSK) has been meticulously designed to foster
-          a robust and sustainable ecosystem. With a total supply of 1.5 billion
+          a robust and sustainable ecosystem. With a total supply of 4 billion
           tokens, the allocation strategy ensures balanced distribution among
           investors, team members, advisors, and community incentives,
           promoting long-term growth and engagement.
@@ -33,18 +33,18 @@ const Tokenomics = () => {
               </tr>
               <tr className="border-b-2 border-gray-200">
                 <td className="py-3 font-medium text-gray-700">Total Supply:</td>
-                <td className="py-3 text-xl font-semibold text-gray-900">1,500,000,000</td>
+                <td className="py-3 text-xl font-semibold text-gray-900">4,000,000,000</td>
               </tr>
               <tr className="border-b-2 border-gray-200">
                 <td className="py-3 font-medium text-gray-700">Contract:</td>
                 <td className="py-3 text-xl font-semibold text-gray-900 break-all">
                   <a
-                    href="https://bscscan.com/token/0xB85447b4854e848904471728e6106356bCb4861B"
+                    href="https://basescan.org/token/0xd10cc92ac56966856a757e0bc5aec280a5c2f699"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-red-600 hover:text-red-800 font-bold"
                   >
-                    0xB85447b4854e848904471728e6106356bCb4861B
+                    0xd10cc92AC56966856a757E0bC5aEC280a5c2f699
                   </a>
                 </td>
               </tr>
@@ -55,15 +55,15 @@ const Tokenomics = () => {
         {/* Token allocation */}
         <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"}>
           {[
-            { title: "Public Sale", percent: "10%", tokens: "150,000,000", note: "100% unlocked at TGE" },
-            { title: "Team", percent: "15%", tokens: "225,000,000", note: "1% monthly unlock" },
-            { title: "Advisors", percent: "5%", tokens: "75,000,000", note: "1% monthly unlock" },
-            { title: "Ecosystem Rewards", percent: "20%", tokens: "300,000,000", note: "1% monthly unlock" },
-            { title: "Staking Rewards", percent: "15%", tokens: "225,000,000", note: "1% monthly unlock" },
-            { title: "Treasury", percent: "15%", tokens: "225,000,000", note: "1% monthly unlock" },
-            { title: "Marketing", percent: "10%", tokens: "150,000,000", note: "1% monthly unlock" },
-            { title: "Liquidity", percent: "5%", tokens: "75,000,000", note: "10% unlocked at TGE" },
-            { title: "Partners / KOLs", percent: "5%", tokens: "75,000,000", note: "1% monthly unlock" },
+            { title: "Public Sale", percent: "10%", tokens: "400,000,000", note: "100% unlocked at TGE" },
+            { title: "Team", percent: "15%", tokens: "600,000,000", note: "1% monthly unlock" },
+            { title: "Advisors", percent: "5%", tokens: "200,000,000", note: "1% monthly unlock" },
+            { title: "Ecosystem Rewards", percent: "20%", tokens: "800,000,000", note: "1% monthly unlock" },
+            { title: "Staking Rewards", percent: "15%", tokens: "600,000,000", note: "1% monthly unlock" },
+            { title: "Treasury", percent: "15%", tokens: "600,000,000", note: "1% monthly unlock" },
+            { title: "Marketing", percent: "10%", tokens: "400,000,000", note: "1% monthly unlock" },
+            { title: "Liquidity", percent: "5%", tokens: "200,000,000", note: "10% unlocked at TGE" },
+            { title: "Partners / KOLs", percent: "5%", tokens: "200,000,000", note: "1% monthly unlock" },
           ].map((item, idx) => (
             <div
               key={idx}
